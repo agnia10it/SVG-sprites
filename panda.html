@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .panda {
+    width: 300px;
+    background-color: aqua;
+  }
+
+</style>
+
+<body>
+  <svg class="panda" viewBox="0 0 165 150" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="earR" viewBox="0 0 35 50">
+      <ellipse cx="22" cy="23" rx="18" ry="25" fill="#4a4a4a" transform="rotate(45 22 23)" />
+      <ellipse cx="22" cy="23" rx="7" ry="10" fill="#010101" transform="rotate(45 22 23)" />
+    </symbol>
+    <symbol id="earL" viewBox="0 0 35 50">
+      <ellipse cx="22" cy="23" rx="18" ry="25" fill="#4a4a4a" transform="rotate(-45 22 23)" />
+      <ellipse cx="22" cy="23" rx="7" ry="10" fill="#010101" transform="rotate(-45 22 23)" />
+    </symbol>
+    <symbol id="eye" viewBox="0 0 30 37">
+      <ellipse cx="15" cy="18" rx="15" ry="18" fill="#4a4a4a" />
+      <circle cx="15" cy="15" r="7" fill="#010101"/>
+      <circle cx="13" cy="12" r="3" fill="#fff"/>
+    </symbol>
+    <use href="#earR" x="0" y="0" width="54" height="50" />
+    <use href="#earL" x="104" y="0" width="54" height="50" />
+    <circle cx="84" cy="72" r="70" fill="#fff"/>
+    <use href="#eye" x="36" y="56" width="30" height="38" />
+    <use href="#eye" x="102" y="56" width="30" height="38" />
+    <ellipse cx="84" cy="93" rx="10" ry="8" fill="#010101" />
+  </svg>
+</body>
+
+</html>
